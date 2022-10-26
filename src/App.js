@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useEffect, useState } from "react";
+import ProductCard from "./ProductCard";
 
 function App() {
+  const [date, setData] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://acciojob-module-7-sept-2022-default-rtdb.asia-southeast1.firebasedatabase.app/products.json"
+    ).then((response) => {
+      response.json().then((data) => {
+        // console.log(data);
+        const product = [];
+        for (const key in data) {
+          product.push({
+            id: key,
+            newPrice: data[key].newPrice,
+            oldPrice: data[key].oldPrice,
+            productImage: data[key].productImage,
+            productName: data[key].productName,
+          });
+        }
+        console.log(product);
+        setData(product);
+      });
+    });
+  });
+  console.log(date);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Products</h1>
+      <div className="product">
+        {date.map((date) => (
+          <ProductCard
+            id={date.id}
+            image={date.productImage}
+            name={date.productName}
+            oldPrice={date.oldPrice}
+            newPrice={date.newPrice}
+          />
+        ))}
+      </div>
     </div>
   );
 }
