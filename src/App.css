@@ -1,4 +1,21 @@
 .product{
   display: flex;
    gap:40px; 
+   margin-left: 50px;
+   margin-bottom: 100px;
+    
+}
+.pro{
+  margin-top: 700px;
+  margin-left: 70px;
+
+}
+.scroll{
+  display: flex;
+  overflow-y: scroll;
+
+    gap: 40px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+  /* white-space: nowrap; */
 }

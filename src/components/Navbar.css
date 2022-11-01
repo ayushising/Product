@@ -1,0 +1,90 @@
+.title{
+    margin-left: 2rem;
+    margin-top: 20px;
+    /* font-family: 'Montserrat'; */
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: #252B42;
+}
+.link{
+    /* font-family: 'Montserrat'; */
+    margin-top: 20px;
+    cursor:pointer;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+
+    
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #737373;
+}
+.icons{
+    display: flex;
+    gap: 25px;;
+    margin-top: 0.5rem;
+}
+.nav{
+    display: flex;
+    gap:110px;
+}
+img{
+    height:20px;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+
+}
+.side{
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    gap:20px
+}
+.login{
+    display: flex;
+}
+.cart{
+    display: flex;
+    font-weight: 400;
+}
+.heart{
+    display: flex;
+    font-weight: 400;
+}
+.log{
+    margin-top:20px;
+    font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+    
+        text-align: center;
+        letter-spacing: 0.2px;
+    
+        /* primary-color */
+    
+        color: #23A6F0;
+
+
+}
+.para{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* primary-color */
+
+    color: #23A6F0;
+margin-top: 20px;}

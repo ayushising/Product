@@ -1,0 +1,105 @@
+ .ban{
+    position: absolute;
+        width: 1292px;
+        height: 622px;
+        left: calc(50% - 1292px/2 - 15px);
+        top: 92px;
+        display: flex;
+    
+        background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
+        border-radius: 20px;
+}
+.imgc{
+    position: absolute;
+        width: 696px;
+        height: 699px;
+        /* margin-right: 20px; */
+        margin-top: -40px;
+        margin-left: 0px;
+      
+        
+       
+        
+        
+         /* left: calc(50% - 696px/2 - 0.5px); */
+      
+}
+.h5c{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+
+    /* hover-text-color */
+
+    color: #2A7CC7;
+    margin-top: 40px;
+
+  
+
+}
+.h1c{
+    font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 80px;
+        /* identical to box height, or 138% */
+    
+        letter-spacing: 0.2px;
+    
+        /* text-color */
+            margin-top: 20px;
+    
+        color: #252B42;
+        margin-bottom: 5px;
+}
+.h4c{
+    font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        /* or 150% */
+    
+        letter-spacing: 0.2px;
+        margin-top: 5px;
+    
+        /* second-text-color */
+    
+        color: #737373;
+        
+
+}
+.buttonc{
+    padding: 15px 40px;
+        gap: 10px;
+    
+        width: 221px;
+        height: 62px;
+    
+        /* primary-color */
+        border:none;
+        cursor: pointer;
+    
+        background: #23A6F0;
+        border-radius: 5px;
+        font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+        
+            text-align: center;
+            letter-spacing: 0.1px;
+        
+            /* light-text-color */
+        
+            color: #FFFFFF;
+
+}
+.left{
+    margin-left: 150px;
+    margin-top: 150px;
+} 

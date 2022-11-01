@@ -1,6 +1,9 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "./components/ProductCard";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Banner from "./components/Banner";
 
 function App() {
   const [date, setData] = useState([]);
@@ -30,18 +33,25 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Products</h1>
-      <div className="product">
-        {date.map((date) => (
-          <ProductCard
-            id={date.id}
-            image={date.productImage}
-            name={date.productName}
-            oldPrice={date.oldPrice}
-            newPrice={date.newPrice}
-          />
-        ))}
+      <Navbar />
+      <Banner />
+      <div>
+        <h1 className="pro">Products</h1>
+        <div className="product">
+          <div className="scroll">
+            {date.map((date) => (
+              <ProductCard
+                id={date.id}
+                image={date.productImage}
+                name={date.productName}
+                oldPrice={date.oldPrice}
+                newPrice={date.newPrice}
+              />
+            ))}
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
